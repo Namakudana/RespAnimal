@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "430597541100",
+    "project_id": "respanimalkotlin",
+    "storage_bucket": "respanimalkotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430597541100:android:4936a8925f864fe6f1a9c9",
+        "android_client_info": {
+          "package_name": "com.mardana.respanimal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430597541100-1tpvb9bdmiv9fi5g4vjc6g207qtb184e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLgrfI0_CDP58X4jFMMG0F-n69PrAAqDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430597541100-1tpvb9bdmiv9fi5g4vjc6g207qtb184e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

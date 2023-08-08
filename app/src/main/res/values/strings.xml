@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">RespAnimal</string>
+    <string name="tambah_materi">Tambah Materi</string>
+    <string name="tambah_latihan">Tambah Latihan</string>
+    <string name="lihat_nilai">Lihat Nilai</string>
+    <string name="masukkan_judul_materi">Masukkan Judul Materi</string>
+    <string name="masukkan_ringkasan_materi">Masukkan Ringkasan Materi</string>
+    <string name="masukkan_detail_materi">Masukkan Detail Materi</string>
+    <string name="simpan">Simpan</string>
+    <string name="pertanyaan">Pertanyaan</string>
+    <string name="pilihan_1">Pilihan 1</string>
+    <string name="pilihan_2">Pilihan 2</string>
+    <string name="pilihan_4">Pilihan 4</string>
+    <string name="pilihan_3">Pilihan 3</string>
+    <string name="jawaban">Jawaban</string>
+    <string name="tambah">Tambah</string>
+    <string name="nama_soal">Nama Soal</string>
+    <string name="level_soal">Level Soal</string>
+    <string name="menu">Menu</string>
+    <string name="admin">Admin</string>
+    <string name="respanimal">RespAnimal</string>
+    <string name="materi_pendahuluan">Materi Pendahuluan</string>
+    <string name="pengertian_pernapasan">Pengertian Pernapasan</string>
+    <string name="pertanyaan_soal">Pertanyaan soal</string>
+    <string name="nama_quiz">Nama Quiz</string>
+    <string name="level_quiz">Level Quiz</string>
+    <string name="nama_pengguna">Nama Pengguna</string>
+    <string name="kelas">Kelas</string>
+    <string name="latihan_1">Latihan 1</string>
+    <string name="latihan_2">Latihan 2</string>
+    <string name="latihan_3">Latihan 3</string>
+    <string name="latihan_4">Latihan 4</string>
+    <string name="ulangan">Ulangan</string>
+    <string name="created_date">Dibuat pada: %s</string>
+    <string name="edit_date">Terakhir di ubah pada: %s</string>
+</resources>
