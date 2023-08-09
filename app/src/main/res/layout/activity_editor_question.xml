@@ -80,31 +80,44 @@
                 android:hint="@string/pilihan_4"
                 android:importantForAutofill="no"/>
         </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            app:boxBackgroundColor="@color/white"
-            app:boxBackgroundMode="outline">
-            <EditText
-                android:id="@+id/answer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:hint="@string/jawaban"
-                android:importantForAutofill="no"/>
-        </com.google.android.material.textfield.TextInputLayout>
 
         <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="wrap_content"
+            android:id="@+id/mySpinner"
+            android:layout_width="match_parent"
+            android:spinnerMode="dialog"
+            android:layout_marginVertical="12dp"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:id="@+id/timeMade"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:prompt="select_item"/>
+            android:text="@string/created_date"
+            android:layout_marginTop="12dp"
+            android:autofillHints="no"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/editedTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_date"
+            android:layout_marginTop="4dp"
+            android:autofillHints="no"
+            android:visibility="gone"/>
+
         <Button
             android:id="@+id/btn_save"
             android:text="@string/tambah"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_delete"
+            android:text="Hapus"
+            android:backgroundTint="#FF0000"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:visibility="gone"
             android:layout_height="wrap_content"/>
     </LinearLayout>
 </ScrollView>

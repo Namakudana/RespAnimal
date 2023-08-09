@@ -1,6 +1,5 @@
 package com.mardana.respanimal.adapter
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +10,10 @@ import com.bumptech.glide.Glide
 import com.mardana.respanimal.R
 import com.mardana.respanimal.model.MaterialModel
 
-class MaterialAdapter(private val materialList: List<MaterialModel>, private val onClick: (MaterialModel) -> Unit) :
+class MaterialAdapter(
+    private val materialList: List<MaterialModel>,
+    private val onClick: (MaterialModel) -> Unit
+) :
     RecyclerView.Adapter<MaterialAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {

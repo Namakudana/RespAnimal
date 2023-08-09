@@ -2,9 +2,8 @@ package com.mardana.respanimal
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.mardana.respanimal.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -22,8 +21,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, ViewMaterial::class.java))
         }
 
+        binding.btnQuiz.setOnClickListener {
+            startActivity(Intent(this, ViewQuestion::class.java))
+        }
+
         binding.btnNilai.setOnClickListener {
             startActivity(Intent(this, ViewScoreList::class.java))
         }
+
     }
 }

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="12dp">
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/secondary"
         app:cardCornerRadius="5dp"
         app:cardElevation="20dp"
@@ -36,39 +36,6 @@
                     android:textSize="23sp"
                     android:textStyle="bold" />
             </LinearLayout>
-
-            <TextView
-                android:id="@+id/tvoption1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="pilihan 1"
-                android:textColor="@color/subtext"
-                android:textSize="12sp"/>
-            <TextView
-                android:id="@+id/tvoption2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="pilihan 2"
-                android:textColor="@color/subtext"
-                android:textSize="12sp"/>
-            <TextView
-                android:id="@+id/tvoption3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="pilihan 3"
-                android:textColor="@color/subtext"
-                android:textSize="12sp"/>
-            <TextView
-                android:id="@+id/tvoption4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="pilihan 4"
-                android:textColor="@color/subtext"
-                android:textSize="12sp"/>
             <TextView
                 android:id="@+id/tvanswer"
                 android:layout_width="wrap_content"

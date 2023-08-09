@@ -163,6 +163,7 @@ class EditorMaterial : AppCompatActivity() {
         binding.timeMade.visibility = View.VISIBLE
         binding.editedTime.visibility = View.VISIBLE
         binding.btnDelete.visibility = View.VISIBLE
+        binding.btnSave.text = "Ubah"
     }
 
     private fun uploadImage(callback: (data: Any, success: Boolean) -> Unit) {
@@ -188,6 +189,7 @@ class EditorMaterial : AppCompatActivity() {
                 Toast.makeText(this, "Berhasil Menyimpan Data", Toast.LENGTH_SHORT).show()
                 onBackPressed()
             }.addOnFailureListener {
+                binding.btnSave.isEnabled = true
                 Log.e("Editor Material", it.message.toString())
                 Toast.makeText(this, it.message.toString(), Toast.LENGTH_SHORT).show()
             }

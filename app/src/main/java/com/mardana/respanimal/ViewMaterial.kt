@@ -2,7 +2,6 @@ package com.mardana.respanimal
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -32,32 +31,31 @@ class ViewMaterial : AppCompatActivity() {
 
     private fun setupData() {
         db.collection("material").addSnapshotListener { value, error ->
-                materialList.clear()
-                if (value != null && !value.isEmpty) {
-                    value.documents.forEach { snapshot ->
-                        val getMaterial = snapshot.toObject(MaterialModel::class.java)
-                        getMaterial?.let { material ->
-                            materialList.add(material)
-                        }
+            materialList.clear()
+            if (value != null && !value.isEmpty) {
+                value.documents.forEach { snapshot ->
+                    val getMaterial = snapshot.toObject(MaterialModel::class.java)
+                    getMaterial?.let { material ->
+                        materialList.add(material)
                     }
-                    setupAdapter()
-                } else {
-                    materialList.clear()
-                    setupAdapter()
-                    Log.e("ViewMaterial", "data kosong atau null")
                 }
+                setupAdapter()
+            } else {
+                materialList.clear()
+                setupAdapter()
             }
+        }
     }
 
     private fun setupAdapter() {
         recycler = binding.recyclerView
         recycler.layoutManager = LinearLayoutManager(this)
-        materialAdapter = MaterialAdapter(materialList.sortedByDescending { it.lastUpdatedDate }) { material ->
-            val intent = Intent(this, EditorMaterial::class.java)
-            intent.putExtra(EditorMaterial.IntentId.materialExtra, material)
-            startActivity(intent)
-        }
+        materialAdapter =
+            MaterialAdapter(materialList.sortedByDescending { it.lastUpdatedDate }) { material ->
+                val intent = Intent(this, EditorMaterial::class.java)
+                intent.putExtra(EditorMaterial.IntentId.materialExtra, material)
+                startActivity(intent)
+            }
         recycler.adapter = materialAdapter
     }
-
 }
