@@ -22,10 +22,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, ViewMaterial::class.java))
         }
 
-        binding.btnQuiz.setOnClickListener {
-            startActivity(Intent(this, ViewQuiz::class.java))
-        }
-
         binding.btnNilai.setOnClickListener {
             startActivity(Intent(this, ViewScoreList::class.java))
         }
