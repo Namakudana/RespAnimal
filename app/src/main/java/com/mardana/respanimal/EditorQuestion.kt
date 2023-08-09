@@ -49,15 +49,15 @@ class EditorQuestion : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                 }
 
                 (binding.option2.text.toString().isEmpty()) -> {
-                    binding.option1.error = "Silahkan lengkapi jawaban B"
+                    binding.option2.error = "Silahkan lengkapi jawaban B"
                 }
 
                 (binding.option3.text.toString().isEmpty()) -> {
-                    binding.option1.error = "Silahkan lengkapi jawaban C"
+                    binding.option3.error = "Silahkan lengkapi jawaban C"
                 }
 
                 (binding.option4.text.toString().isEmpty()) -> {
-                    binding.option1.error = "Silahkan lengkapi jawaban D"
+                    binding.option4.error = "Silahkan lengkapi jawaban D"
                 }
 
                 else -> {

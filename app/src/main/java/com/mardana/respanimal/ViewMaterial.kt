@@ -39,11 +39,10 @@ class ViewMaterial : AppCompatActivity() {
                         materialList.add(material)
                     }
                 }
-                setupAdapter()
             } else {
                 materialList.clear()
-                setupAdapter()
             }
+            setupAdapter()
         }
     }
 

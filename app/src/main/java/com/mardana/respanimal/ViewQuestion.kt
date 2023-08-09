@@ -48,7 +48,6 @@ class ViewQuestion : AppCompatActivity() {
     }
 
     private fun setupAdapter() {
-        Log.e("ViewQuestion", questionList.size.toString())
         recycler = binding.recyclerView
         recycler.layoutManager = LinearLayoutManager(this)
         questionAdapter =
